@@ -3,22 +3,22 @@
 
     jQuery(document).ready(function ($) {
 
-        var isotopeSelectors = $(".isotope-button");
+        var $isotopeSelectors = $(".isotope-button");
 
-        isotopeSelectors.each(function() {
+        $isotopeSelectors.each(function() {
             var $selector = $(this);
             var $selectorData = $selector.data('isotope');
 
             $selector.click(function () {
 
                 //    Add/Remove Active Class from Isotope Selectors
-                $(isotopeSelectors).removeClass("active");
+                $($isotopeSelectors).removeClass("active");
                 $(this).addClass("active");
 
 
                 //    Switching Isotope item by Clicking Tab Items
-                var isotopeItems = $(".isotope-item");
-                isotopeItems.each(function() {
+                var $isotopeItems = $(".isotope-item");
+                $isotopeItems.each(function() {
                     var $singleItem = $(this);
                     console.log($singleItem);
 
