@@ -25,10 +25,10 @@
                     var $itemData = $singleItem.data('isotope');
                     
                     if($selectorData !== $itemData) {
-                        $(singleItem).hide();
+                        $singleItem.hide();
                     }
                     else {
-                        $(singleItem).show();
+                        $singleItem.show();
                     }
                 });
 
